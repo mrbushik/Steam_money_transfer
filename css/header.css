@@ -1,0 +1,45 @@
+.wrapper {
+    align-items: center;
+}
+
+.header__burger__menu {
+    display: none;
+}
+
+.header__btn {
+    width: 170px;
+    height: 64px;
+    letter-spacing: .25px;
+}
+
+.nav__title_logo {
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: var( --font-family-b-700);
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: rgba(219, 119, 5, 0.589)
+}
+
+.wrapper__nav {
+    display: flex;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--color-purple-dark);
+    font-family: var( --font-family-r);
+    font-size: 18px;
+    transition: color var(--animation);
+}
+
+.header_nav:hover,
+.header_nav:focus {
+    color: var(--color-purple-light);
+}
+
+.header__nav__active {
+    color: var(--color-black);
+    font-family: var(--font-family-b-700);
+    font-size: 18px;
+}

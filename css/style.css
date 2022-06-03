@@ -1,0 +1,54 @@
+@import url('../css/main.css');
+@import url('../css/core.css');
+@import url('../css/media.css');
+@import url('../css/header.css');
+@import url('../css/button.css');
+@import url('../css/about.css');
+@import url('../css/footer.css');
+:root {
+    --color-white: #fff;
+    --color-black: #2D3436;
+    --color-gray-64: #5C5C5C;
+    --color-gray-48: #858585;
+    --color-gray-32: #ADADAD;
+    --color-gray-24: #C2C2C2;
+    --color-blue-dark: #0984E3;
+    --color-blue-light: #74B9FF;
+    --color-green-dark: #00B894;
+    --color-green-light: #55EFC4;
+    --color-yellow-dark: #FDCB6E;
+    --color-yellow-light: #FFEAA7;
+    --color-red-dark: #D63031;
+    --color-red-light: #FF7675;
+    --color-purple-dark: #6C5CE7;
+    --color-purple-light: #A29BFE;
+    --color-pink-dark: #E84393;
+    --color-pink-light: #FD79A8;
+    --color-rgba-gray: rgba(194, 194, 194, 0.24);
+    --font-family-r: InterR, sans-serif;
+    --font-family-m: InterM500, sans-serif;
+    --font-family-b-700: InterB700, sans-serif;
+    --font-family-b-800: InterExtraBold800, sans-serif;
+    --font-family-b-900: InterExtraBold900, sans-serif;
+    --animation-speed: .3s;
+    --animation-func: ease;
+    --animation: var(--animation-speed) var(--animation-func);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-r: RobotoR, sans-serif;
+}
