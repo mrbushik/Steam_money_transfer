@@ -12,15 +12,6 @@
     letter-spacing: .25px;
 }
 
-.nav__title_logo {
-    margin-left: 30px;
-    font-size: 30px;
-    font-family: var( --font-family-b-700);
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    color: rgba(219, 119, 5, 0.589)
-}
-
 .wrapper__nav {
     display: flex;
 }
