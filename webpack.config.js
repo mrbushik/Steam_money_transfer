@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -12,22 +13,30 @@ module.exports = {
         // assetModuleFilename: 'assets/images/[name]-[hash][ext]'
     },
     devServer: {
-        port: 5000,
-        static: './public',
-        hot: true
+        historyApiFallback: true,
+        contentBase: path.resolve(__dirname, './dist'),
+        open: true,
+        compress: true,
+        hot: true,
+        port: 8080,
     },
     module: {
         rules: [{
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+            }, {
+                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                type: 'asset/inline',
+            }, // CSS, PostCSS, Sass
+            {
+                test: /\.(scss|css)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.(s*)css$/,
-                use: [
-                    miniCss.loader,
-                    'css-loader?url=false',
-                    'sass-loader',
-                ]
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
+
             },
         ]
     },
@@ -38,6 +47,8 @@ module.exports = {
             template: path.resolve(__dirname, './src/template.html'), // шаблон
             filename: 'index.html', // название выходного файла
         }),
+        new CleanWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ],
 
 }

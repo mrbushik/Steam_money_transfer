@@ -4,3 +4,7 @@ heading.textContent = 'Как интересно!'
 // добавляем заголовок в DOM
 const root = document.querySelector('#root')
 root.append(heading)
+
+import './scss/all.scss'
+
+import example from './images/example.png'
