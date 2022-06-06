@@ -1,26 +1,22 @@
-:root {
-  --mainBg: salmon;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-$light-text: moccasin;
 
 body {
-  /* css variables will fallback to their background color
-  ** from `postcss-preset-env` in final output
-  */
-  background-color: var(--mainBg);
-  color: $light-text;
+    margin: 0;
+    padding: 0;
+    background-color: rgba($color: #cfe5f7, $alpha: 1.0);
 }
 
-.container {
-  padding: 1rem;
+body * {
+    box-sizing: border-box;
+}
 
-  /* these lines are here to show autoprefixing on final output */
-  display: flex;
-  background: linear-gradient(to top, black, white);
+:root {
+    --font-family-r: RobotoR, sans-serif;
+}
 
-  h1 {
-    font-size: 68px;
-    text-align: center;
-  }
+.wrapper__container-flex {
+    display: flex;
 }
