@@ -1,10 +1,18 @@
-const heading = document.createElement('h1')
-heading.textContent = 'Как интересно!'
+import "./style.scss";
+import getClasses from "./getClasses";
 
-// добавляем заголовок в DOM
-const root = document.querySelector('#root')
-root.append(heading)
+getClasses();
 
-import './scss/all.scss'
+const elvenShieldRecipe = {
+  leatherStrips: 2,
+  ironIngot: 1,
+  refinedMoonstone: 4,
+};
 
-import example from './images/example.png'
+// ES7 Object spread example
+const elvenGauntletsRecipe = {
+  ...elvenShieldRecipe,
+  leather: 1,
+  refinedMoonstone: 1,
+};
+console.log("ES7 Object spread example: ", elvenGauntletsRecipe);

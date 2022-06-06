@@ -1,0 +1,28 @@
+:root {
+  --mainBg: salmon;
+}
+
+body {
+  /* css variables will fallback to their background color
+  ** from `postcss-preset-env` in final output
+  */
+  background-color: salmon;
+  background-color: var(--mainBg);
+  color: moccasin;
+}
+
+.container {
+  padding: 1rem;
+  /* these lines are here to show autoprefixing on final output */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(white));
+  background: linear-gradient(to top, black, white);
+}
+.container h1 {
+  font-size: 68px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map*/
