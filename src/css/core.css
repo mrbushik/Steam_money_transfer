@@ -1,0 +1,64 @@
+@font-face {
+    font-family: H1 Heading;
+    src: url(' ');
+}
+
+
+/* inter-regular - latin */
+
+@font-face {
+    font-family: InterR;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat-Regular.ttf');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/Montserrat-Regular.otf') format('otf'), url('../fonts/Montserrat-Regular.ttf') format('ttf'),
+}
+
+
+/* inter-500 - latin */
+
+@font-face {
+    font-family: InterM500;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Montserrat-Medium.ttf');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/Montserrat-Medium.otf') format('otf'), url('../fonts/Montserrat-Medium.ttf') format('ttf'),
+}
+
+
+/* inter-700 - latin */
+
+@font-face {
+    font-family: InterB700;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat-Bold.ttf');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/Montserrat-Bold.otf') format('otf'), url('../fonts/Montserrat-ExtraBold.ttf') format('ttf'),
+}
+
+
+/* inter-800 - latin */
+
+@font-face {
+    font-family: InterExtraBold800;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/Montserrat-ExtraBold.otf') format('otf'), url('../fonts/Montserrat-ExtraBold.ttf') format('ttf'),
+}
+
+
+/* inter-900 - latin */
+
+@font-face {
+    font-family: InterExtraBold900;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Montserrat-ExtraBoldItalic.ttf');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/Montserrat-ExtraBoldItalic.otf') format('otf'), url('../fonts/Montserrat-ExtraBoldItalic.ttf') format('ttf'),
+}

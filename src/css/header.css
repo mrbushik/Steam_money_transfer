@@ -1,0 +1,14 @@
+.wrpapper__container-flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.wrapper__nav {
+    display: flex;
+}
+
+.wrpapper__container {
+    width: 70%;
+    margin: 0 auto;
+}

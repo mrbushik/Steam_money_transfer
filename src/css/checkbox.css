@@ -1,0 +1,50 @@
+.forms__confirm__container {}
+
+.option {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.check {
+    padding-left: 1.2em;
+}
+
+.check__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+.check__box {
+    position: absolute;
+    margin-left: -1em;
+    margin-top: 0.3em;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 0.05em;
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 0.1em var(--color-purple-dark);
+}
+
+.check__input:checked+.check__box {
+    background-color: var(--color-purple-dark);
+    background-image: url(../images/icons/check.svg);
+}
+
+.check__input:focus+.check__box {
+    box-shadow: 0 0 0 0.1em var(--color-purple-dark);
+}
+
+.check__input:disabled+.check__box {
+    box-shadow: 0 0 0 0.1em var( --color-gray-48);
+}
+
+.check__input:checked:disabled+.check__box {
+    background-color: var( --color-gray-48);
+}
+
+.check>p {
+    margin-left: 1em;
+}

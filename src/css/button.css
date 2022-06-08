@@ -1,0 +1,107 @@
+.wrapper__btn {
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: var(--font-family-b-700);
+    cursor: pointer;
+    outline: none;
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    transition: background var(--animation);
+    transition: color var(--animation), border-color var(--animation);
+}
+
+.wrapper__btn:hover,
+.wrapper__btn:focus,
+.wrapper__btn:focus {
+    transition: background var(--animation);
+    background: var(--color-purple-light);
+}
+
+.primary__btn {
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: var(--font-family-b-700);
+    cursor: pointer;
+    outline: none;
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    transition: background var(--animation);
+    transition: color var(--animation), border-color var(--animation);
+}
+
+.primary__btn:hover,
+.primary__btn:focus,
+.primary__btn:focus {
+    transition: background var(--animation);
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
+}
+
+
+/* .wrapper__btn {
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: var(--font-family-b-700);
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper__btn {
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+}
+
+.wrapper__btn {
+    border-radius: 999px;
+}
+
+.wrapper__btn:hover,
+.wrapper__btn:hover,
+.wrapper__btn:focus,
+.wrapper__btn:focus 
+    background: rgb(196, 107, 255);
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
+    transition: background var(--animation);
+} 
+
+
+
+.default__btn {
+    border-radius: 16px;
+    background: transparent;
+    color: var(--color-purple-dark);
+    border: 1px solid var(--color-gray-32);
+    transition: color var(--animation), border-color var(--animation);
+}
+
+.default__btn:hover,
+.default__btn:focus {
+    transition: color var(--animation);
+    color: var(--color-purple-light);
+    border: 1px solid var(--color-gray-24);
+}
+
+.main__btn {
+    width: 270px;
+    height: 82px;
+}
+
+.--dark {
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    border: 1px solid var(--color-purple-dark);
+    transition: color var(--animation), border-color var(--animation);
+    transition: background var(--animation);
+}
+
+.--dark:hover {
+    background: var(--color-purple-light);
+    color: var(--color-white);
+    border: 1px solid var(--color-purple-light);
+    transition: background var(--animation);
+} */

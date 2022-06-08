@@ -1,0 +1,42 @@
+.right-wrapper__payment {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: end;
+}
+
+.form__calc__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    position: relative;
+    font-size: 14px;
+    font-family: var(--font-family-m);
+    color: var(--color-gray-64);
+}
+
+.form__calc__item:last-child {
+    margin: 0;
+}
+
+.form__calc {
+    margin-top: 20%;
+}
+
+
+/* .form__calc__item:before {
+    border-bottom: 1px dashed #2f2f37;
+    bottom: 3px;
+    content: " ";
+    display: block;
+    height: 2px;
+    left: 77px;
+    position: absolute;
+    width: 80%;
+    z-index: 1;
+} */
+
+.form__calc__item-sum {
+    font-family: var(--font-family-b-700);
+    font-size: 16px;
+}

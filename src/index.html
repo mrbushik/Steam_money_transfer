@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Grid</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__container">
+            <div class="wrpapper__container-flex">
+                <!-- <div class="wrapper__nav">
+                    <div class="wrapper__nav__logo">
+                        <h3>Steam Transfer</h3>
+                    </div>
+                    <div class="wrapper__nav__list">
+                        <ul class="wrapper__nav__items">
+                            <li class="wrapper__nav__item"><a class="wrapper__nav__link" href="#">About</a></li>
+                        </ul>
+                        <ul class="wrapper__nav__items">
+                            <li class="wrapper__nav__item"><a class="wrapper__nav__link" href="#">Search login</a></li>
+                        </ul>
+                        <ul class="wrapper__nav__items">
+                            <li class="wrapper__nav__item"><a class="wrapper__nav__link" href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+
+                <div class="wrapper__main">
+
+
+                    <div class="wrapper__flex">
+                        <div class="wrapper__forms ">
+                            <div class="wrapper__forms__follow ">
+
+                                <span class="wrapper__forms__title ">Пополни баланс Steam</span>
+
+                            </div>
+
+                            <div class="wrapper__forms__feedback ">
+                                <div class="wrapper__forms_question"><img class="forms_question__img" src="/images/icons/icon-edit.svg" alt=""> <a class="forms_question__link" href="#">Как это работает?</a></div>
+                                <h3 class="wrapper__forms__secondtitle ">Только для аккаунтов с балансом в РУБ. (₽)</h3>
+
+                                <form action=" " class="wrapper__forms__fields ">
+                                    <div class="wrapper__forms__input ">
+                                        <label class="wrapper__name__input__container ">
+                                            <input type="text " placeholder="Ваш логин " />
+                                            <div></div>             
+                                    </label>
+                                        <label class="wrapper__email__input__container "> <input type="number " placeholder="Сумма"/>
+                                        <div></div>
+                                    </label>
+                                    </div>
+                                </form>
+
+                                <form action=" " class="wrapper__wallet">
+                                    <div class="wrapper__forms__wallet">
+
+                                        <div class="wrapper__wallet__container">
+
+                                            <button type="button " class=" wrapper__btn">100 ₽</button>
+                                            <button type="button " class=" wrapper__btn">200 ₽</button>
+                                            <button type="button " class=" wrapper__btn">500 ₽</button>
+                                            <button type="button " class=" wrapper__btn">1000 ₽</button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="wrapper__forms__confirm">
+                                        <div class="forms__confirm__container">
+
+                                            <label class="check option"><input class="check__input" type="checkbox" checked>
+                                            <span class="check__box"></span>
+                                            <p>Подтверждаю правильность логина steam</p>
+                                        </label>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="wrapper__forms__btn ">
+
+
+                                        <button type="button " class="primary__btn wrapper__btn">Пополнить</button>
+                                    </div>
+
+                            </div>
+                        </div>
+                        </form>
+                        <div class="right-wrapper__payment">
+                            <div class="wrapper__payment">
+                                <div class="wrapper__payment-grid">
+
+                                    <div id="card" class="payment__container">
+                                        <div class="wrapper__payment-card">
+                                            <p>Карта</p>
+                                            <input type="radio" name="method" id="1" class="hidebx" value="enot-card" required>
+                                            <label for="1" class="lbl-radio">
+                                        <div class="display-box">
+                                            <div><img src="./images/icons/card.png" alt="card">
+                                                </div>
+                                        </div>
+                                    </label>
+                                        </div>
+                                    </div>
+                                    <div id="card" class="payment__container">
+                                        <div class="wrapper__payment-card">
+                                            <p>QIWI</p>
+                                            <input type="radio" name="method" id="2" class="hidebx" value="enot-qiwi" required>
+                                            <label for="1" class="lbl-radio">
+                                        <div class="display-box">
+                                            <div><img src="./images/icons/QIWI.png" alt="card">
+                                                
+                                            </div>
+                                        </div>
+                                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__calc">
+                                <div class="form__calc__item">
+                                    <span>Заплатите:</span>
+                                    <div class="form__calc__item-sum" id="amount">0 ₽</div>
+                                </div>
+                                <div class="form__calc__item">
+                                    <span>Получите на баланс Steam:</span>
+                                    <div class="form__calc__item-sum" id="amount">0 ₽</div>
+                                </div>
+                                <div class="form__calc__item">
+                                    <span>Комиссия:</span>
+                                    <div class="form__calc__item-sum" id="amount">0 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js ">
+    </script>
+</body>
+
+</html>
